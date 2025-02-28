@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Info - Home</title>
+</head>
+<body>
+    <h1>Company Info</h1>
+    <a href="/create_company">Create New Company</a>
+    <ul>
+        {% for company in companies %}
+        <li>
+            {{ company["Ticker"] }} - {{ company["Company_Name"] }}
+            [ <a href="/read_company/{{ company.key.name }}">View</a> |
+              <a href="/update_company/{{ company.key.name }}">Edit</a> |
+              <a href="/delete_company/{{ company.key.name }}">Delete</a> ]
+        </li>
+        {% else %}
+        <li>No companies found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

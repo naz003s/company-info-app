@@ -1,0 +1,22 @@
+<!-- templates/create_company.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Company</title>
+</head>
+<body>
+    <h1>Create Company</h1>
+    <form method="POST" action="/create_company">
+        <label>Ticker:</label>
+        <input type="text" name="Ticker" required><br><br>
+        <label>Company Name:</label>
+        <input type="text" name="Company_Name" required><br><br>
+        <label>Industry:</label>
+        <input type="text" name="Industry" required><br><br>
+        <button type="submit">Create</button>
+    </form>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

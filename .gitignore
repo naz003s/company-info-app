@@ -1,0 +1,7 @@
+# Ignore credentials and virtual environment
+sentiment-personal-test-05ffbfd0a786.json
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
